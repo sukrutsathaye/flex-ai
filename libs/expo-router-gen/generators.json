@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "file-based-routing-app": {
+      "factory": "./src/generators/file-based-routing-app/generator",
+      "schema": "./src/generators/file-based-routing-app/schema.json",
+      "description": "file-based-routing-app generator"
+    }
+  }
+}
