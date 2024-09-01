@@ -26,6 +26,7 @@
     "@nx/expo": "19.6.4",
     "@nx/jest": "19.6.4",
     "@nx/js": "19.6.4",
+    "@nx/plugin": "19.6.4",
     "@nx/workspace": "19.6.4",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
