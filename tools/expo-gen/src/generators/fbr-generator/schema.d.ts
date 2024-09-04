@@ -1,3 +1,3 @@
-export interface FbrGeneratorGeneratorSchema {
+export interface FbrGeneratorSchema {
   name: string;
 }

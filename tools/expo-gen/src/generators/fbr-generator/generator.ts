@@ -5,11 +5,11 @@ import {
   Tree,
 } from '@nx/devkit';
 import * as path from 'path';
-import { FbrGeneratorGeneratorSchema } from './schema';
+import { FbrGeneratorSchema } from './schema';
 
-export async function fbrGeneratorGenerator(
+export async function fbrGenerator(
   tree: Tree,
-  options: FbrGeneratorGeneratorSchema
+  options: FbrGeneratorSchema
 ) {
   const projectRoot = `libs/${options.name}`;
   addProjectConfiguration(tree, options.name, {
@@ -22,4 +22,4 @@ export async function fbrGeneratorGenerator(
   await formatFiles(tree);
 }
 
-export default fbrGeneratorGenerator;
+export default fbrGenerator;
