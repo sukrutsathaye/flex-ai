@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "fbr-generator": {
+      "factory": "./src/generators/fbr-generator/generator",
+      "schema": "./src/generators/fbr-generator/schema.json",
+      "description": "fbr-generator generator"
+    }
+  }
+}
