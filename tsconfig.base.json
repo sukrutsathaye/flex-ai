@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@flex-ai/expo-gen": ["tools/expo-gen/src/index.ts"],
       "@flex-ai/expo-router-gen": ["libs/expo-router-gen/src/index.ts"]
     }
   },
