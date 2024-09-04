@@ -11,7 +11,8 @@ export async function fbrGenerator(
   tree: Tree,
   options: FbrGeneratorSchema
 ) {
-  const projectRoot = `libs/${options.name}`;
+  const projectRoot = `apps/${options.name}`;
+  const appDir = `${projectRoot}/src/app`;
   addProjectConfiguration(tree, options.name, {
     root: projectRoot,
     projectType: 'library',
