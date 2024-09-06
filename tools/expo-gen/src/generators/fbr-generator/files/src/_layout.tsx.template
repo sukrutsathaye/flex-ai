@@ -1,0 +1,27 @@
+import React from 'react';
+import { Slot } from 'expo-router';
+
+<% if (authType === 'aws_amplify') { %>
+import { withAuthenticator } from 'aws-amplify-react-native';
+<% } else { %>
+// Import your generic AuthProvider here
+<% } %>
+
+const Layout = () => {
+  <% if (authType === 'aws_amplify') { %>
+  const AuthProvider = withAuthenticator(({ children }) => <>{children}</>);
+  <% } else { %>
+  const AuthProvider = ({ children }) => {
+    // Add your generic auth logic here
+    return <>{children}</>;
+  };
+  <% } %>
+
+  return (
+    <AuthProvider>
+      <Slot />
+    </AuthProvider>
+  );
+};
+
+export default Layout;
